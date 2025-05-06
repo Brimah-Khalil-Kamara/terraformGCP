@@ -36,9 +36,25 @@ Select the disk:  <br/>
 
 <h2>1.2 Step 2 Connect local project with Git Repository:</h2>
 
-The remote repository exists in Github now the local project can be connected to the remote repository. Which means we are going to make it into a Git project. In gitbash in the right folder project path  the git init command is used. What this does is it initialises an empty repository. To connect it to remote to push the existing repository the git remote add origin command is used.
+The remote repository exists in Github now the local project can be connected to the remote repository. Which means we are going to make it into a Git project. In gitbash in the right folder project path  the git init command is used.
+
+```bash
+git init
+```
+
+What this does is it initialises an empty repository. To connect it to remote to push the existing repository the git remote add origin command is used.
+
+```bash
+git remote add origin https://github.com/Brimah-Khalil-Kamara/terraformGCP.git
+```
 
 
+<p align="center">
+Connect to Repository: <br/>
+<img src="https://imgur.com/eJ4XcKq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
 
 
 <!--
