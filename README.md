@@ -28,7 +28,7 @@ Create a Git repository for the terraform project so whatever changes made to th
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://imgur.com/a/FqIJQnj" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/FqIJQnj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
