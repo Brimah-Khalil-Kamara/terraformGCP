@@ -18,7 +18,7 @@ Project consists of simple steps to build a GCP infrastructure with Terraform, m
 
 
 
-<h2>Step 1: Create Repository:</h2>
+<h2>1.1 Step 1 Create Repository:</h2>
 
 Create a Git repository for the terraform project so whatever changes made to the terraform configuration, can actually work with the repository, so there’s a history of the changes and also other team members can check out the code and work on the same project as well.
 
@@ -32,6 +32,14 @@ Create Repository: <br/>
 <br />
 <br />
 Select the disk:  <br/>
+
+
+<h2>1.2 Step 2 Connect local project with Git Repository:</h2>
+
+The remote repository exists in Github now the local project can be connected to the remote repository. Which means we are going to make it into a Git project. In gitbash in the right folder project path  the git init command is used. What this does is it initialises an empty repository. To connect it to remote to push the existing repository the git remote add origin command is used.
+
+
+
 
 <!--
  ```diff
