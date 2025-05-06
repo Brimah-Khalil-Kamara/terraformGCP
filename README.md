@@ -1,4 +1,3 @@
-![Repo](https://github.com/user-attachments/assets/be340999-7d47-4c91-af27-cbd02ddd02b8)
 <h1>Terraform - Introduction to Terraform Infrastructure as code with GCP</h1>
 
 
@@ -29,7 +28,7 @@ Create a Git repository for the terraform project so whatever changes made to th
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/FqIJQnj" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
