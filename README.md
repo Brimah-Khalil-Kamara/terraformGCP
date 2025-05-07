@@ -240,6 +240,8 @@ provider "google" {
   region      = "<SELECTED-REGION>"
 }
 ```
+[Google Provider reference](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference)
+
 <h2></h2>
 
 <p align="center">
@@ -252,10 +254,92 @@ provider "google" {
 
 <h2>9 Setup Remote Backend:</h2>
 
-In VS code a file named 1-backend.tf
+In VS code a file named [1-backend.tf](https://github.com/Brimah-Khalil-Kamara/terraformGCP/blob/main/1-backend.tf) is created.
+
+The following configuration is added to the 1-backend.tf file. Where gcs denotes google cloud storage, bucket is the name of the previous bucket created. 
+
+```hcl
+terraform {
+backend "gcs" {
+bucket = "<BUCKET-NAME>"
+prefix = "terraform/state"
+}
+}
+```
+<h2></h2>
+
+In addition added is the credentials.
+
+<p align="center">
+1-backend.tf: <br/>
+<img src="https://i.imgur.com/yt9ygEE.png" height="80%" width="80%" alt="1-backend.tf"/>
+<br />
+<br />
+<br/>
+<h2></h2>
 
 
+<h2>10 Create VPC:</h2>
 
+The VPC will allow you to define your network infrastucture.
+
+In VS code a file named [2-vpc.tf](https://github.com/Brimah-Khalil-Kamara/terraformGCP/blob/main/2-vpc.tf) is created. You can add the following configuration to the 2-vpc.tf file define your own VPC
+
+```hcl
+resource "google_compute_network" "vpc_network" {
+    name                    = "my-vpc"
+    auto_create_subnetworks = true
+}
+```
+<h2></h2>
+
+<p align="center">
+2-vpc.tf: <br/>
+<img src="https://i.imgur.com/tkTPYb3.png" height="80%" width="80%" alt="2-vpc.tf"/>
+<br />
+<br />
+<br/>
+<h2></h2>
+
+
+<h2>11 Terraform Workflow:</h2>
+
+Once our basic infrastructure has been configured, we can begin to execute terraform commands in our terminal
+
+1. We want to initialise the directory. To do this we run:
+
+```bash
+terraform init
+```
+
+2. Validate. to validate the configuration we run:
+
+   
+```bash
+terraform validate
+```
+
+
+3. Next we want to execute a plan. To do this we run:
+
+   
+```bash
+terraform plan
+```
+
+
+4. To Apply changes by provisioning the resources created we run:
+
+```bash
+terraform apply
+```
+
+5. When the Infrastructure has been built important to teardown resources provisioned. To do this we run:
+
+
+```bash
+terraform destroy
+```
 
 <!--
  ```diff
