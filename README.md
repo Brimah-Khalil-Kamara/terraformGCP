@@ -220,14 +220,39 @@ Remote Repository: <br/>
 <br />
 <br/>
 
+<h2></h2>
+
 
 <h2>8 Create Authentication File:</h2>
 
 In order for terraform to authenticate to Google Cloud an authentication file is needed, making use of the key created and downloaded locally above.
 
-Using VS code an authentication file is created. [0-authentication.tf] 
+Using VS code an authentication file is created. [0-authentication.tf](https://github.com/Brimah-Khalil-Kamara/terraformGCP/blob/main/0-authentication.tf)
+In this instance the provider is Google, The project is the Project worked from, the region, and the credentials is the json file that you download locally to your computer for authentication.
+<h2></h2>
 
+Replace the Service Account key file, project, and region with your own credentials
 
+```hcl
+provider "google" {
+  credentials = file("<KEY-FILE>.json")
+  project     = "<PROJECT-ID>"
+  region      = "<SELECTED-REGION>"
+}
+```
+<h2></h2>
+
+<p align="center">
+0-authentication.tf: <br/>
+<img src="https://i.imgur.com/Wu0utoP.png" height="80%" width="80%" alt="0-authentication.tf"/>
+<br />
+<br />
+<br/>
+<h2></h2>
+
+<h2>9 Setup Remote Backend:</h2>
+
+In VS code a file named 1-backend.tf
 
 
 
