@@ -57,6 +57,34 @@ Connect to Repository: <br/>
 Select the disk:  <br/>
 
 
+<h2>1.3 Step 3 Create .gitignore :</h2>
+
+The thing is we don’t need to check all these files to the repository some of these files shouldn’t be checked in to the repository
+
+So were not going to check the **.terraform** folder which basically just stores the providers that are installed locally so it doesn’t have to be part of the code. When we do a **terraform init** this will be downloaded on your computer locally. 
+
+**terraform.tfstate** is another folder we want to ignore. It is a generated file that gets updated every time we do a **terraform apply.** We also want to ignore the backup file
+
+
+The git status command is ran, we can see all the files we ignored are not on the list, but we have the gitignore file.
+
+
+```bash
+git status
+```
+
+<p align="center">
+gitignore file: <br/>
+<img src="https://i.imgur.com/PRXQXqg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+
+
+
+
+
 <!--
  ```diff
 - text in red
