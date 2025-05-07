@@ -65,6 +65,8 @@ So were not going to check the **.terraform** folder which basically just stores
 
 **terraform.tfstate** is another folder we want to ignore. It is a generated file that gets updated every time we do a **terraform apply.** We also want to ignore the backup file
 
+In addition to this the json GCP private key information is sensitive as we dont want this in our repo so to omit the **.json** file adding it to the gitignore.
+
 
 The git status command is ran, we can see all the files we ignored are not on the list, but we have the gitignore file.
 
