@@ -73,25 +73,45 @@ The git status command is ran, we can see all the files we ignored are not on th
 git status
 ```
 
-<h2>1.4 Step 4 Check the remaining files in:</h2>h2>
-
-Push the files locally to the github Repository created using the 
-
-```bash
-git status
-```
-
-
-
-
-
-
 <p align="center">
 gitignore file: <br/>
 <img src="https://i.imgur.com/PRXQXqg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
+
+
+<h2>1.4 Step 4 Check the remaining files in:</h2>
+
+To push the files remotely to the github Repository created from our local computer we use the following commands.
+
+
+```bash
+git add .
+```
+
+```bash
+git commit -m "initial commit"
+```
+
+```bash
+git push -u origin main
+```
+
+The changes have been pushed to the remote repository and we can check this in the UI
+
+<p align="center">
+gitignore file: <br/>
+<img src="https://i.imgur.com/1z5BOy8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+
+
+
+
+
 
 
 
