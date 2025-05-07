@@ -20,8 +20,7 @@ Project consists of simple steps to build a GCP infrastructure with Terraform, m
 
 <h2>1.1 Step 1 Create Repository:</h2>
 
-Create a Git repository for the terraform project so whatever changes made to the terraform configuration, can actually work with the repository, so there’s a history of the changes and also other team members can check out the code and work on the same project as well.
-
+Create a Git repository for the terraform project so whatever changes made to the terraform configuration, can actually work with the repository, so there’s a history of the changes and also other team members can check out the code and work on the same project as well. 
 
 
 
@@ -103,7 +102,7 @@ git push -u origin main
 The changes have been pushed to the remote repository and we can check this in the UI
 
 <p align="center">
-gitignore file: <br/>
+Remote Repository: <br/>
 <img src="https://i.imgur.com/1z5BOy8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -112,11 +111,104 @@ Select the disk:  <br/>
 
 
 
+<h2>2 GCP Create GCP Cloud Storage Bucket:</h2>
+
+To create buckets you can either create on on the fly or use an existing bucket if there is one available. [Create a new bucket](https://cloud.google.com/storage/docs/creating-buckets)
 
 
 
+<p align="center">
+Create Bucket: <br/>
+<img src="https://i.imgur.com/EuNcS6h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2></h2>
+
+To create bucket in the GCP console type in buckets in the search area and select "Buckets cloud storage". Once in the buckets dashboard area select "create a bucket". In this area you select a name for your bucket and the region to where you want your data stored. Follow the dialogue and select create.
 
 
+
+<p align="center">
+Create Bucket: <br/>
+<img src="https://i.imgur.com/2aXN0nQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2></h2>
+
+
+Now Bucket has been created.
+
+<p align="center">
+Created Bucket: <br/>
+<img src="https://i.imgur.com/mWyAz5G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2>3 Create a terraform Service Account:</h2>
+
+To create a Service account in the console select IAM and admin from the dashboard or alternatively you can search "Service Accounts in the search area. Select "Create Service account". When in the dialogue area select a Service Account name, this auto populates the Service Account ID dialogue box. You can copy and paste the name to the description dialogue box, after select create and continue
+
+<p align="center">
+Create Service Account: <br/>
+<img src="https://i.imgur.com/aRqQ0rN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2></h2>
+
+
+Next we grant the Service Account permissions.
+
+<p align="center">
+Create Service Account: <br/>
+<img src="https://i.imgur.com/QS8jfoo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2></h2>
+
+
+Service Account has been created 
+
+<p align="center">
+Created Service Account: <br/>
+<img src="https://i.imgur.com/du7wtHj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+
+
+<h2>4 GCP Create Key:</h2>
+
+From the Service Account create a key. Go 3 small dots located to the right of the Service Account created created and select manage keys
+
+<p align="center">
+Manage Keys: <br/>
+<img src="https://i.imgur.com/F6z27e4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2></h2>
+
+After selecting Add key and selecting Json format the key will be downloaded locally, this key should be navigated and moved to the correct file path where all Terraform files will reside for building the basic infrastructure.
+
+<p align="center">
+Manage Keys: <br/>
+<img src="https://i.imgur.com/oBOQ7M3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+
+<h2></h2>
 
 
 
