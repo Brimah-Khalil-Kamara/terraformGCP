@@ -73,6 +73,19 @@ The git status command is ran, we can see all the files we ignored are not on th
 git status
 ```
 
+<h2>1.4 Step 4 Check the remaining files in:</h2>h2>
+
+Push the files locally to the github Repository created using the 
+
+```bash
+git status
+```
+
+
+
+
+
+
 <p align="center">
 gitignore file: <br/>
 <img src="https://i.imgur.com/PRXQXqg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
